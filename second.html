@@ -9,7 +9,6 @@
         .container1{
             background-image: url("./img/tm-astro-bg.jpg");
             background-size: cover;
-            height: 100vh;
         }
         #color-white{
             color: white;
@@ -21,33 +20,13 @@
             border-bottom: 2px solid white;
             border-top: 2px solid white;
         }
-        .article1{
-            padding: 20px;
-        }
-        .img1{
-             display: flex;
-             justify-content: space-around;
-        } 
-        .img12{
-            width: 40%;
-            margin-bottom: 20px;
-        }
         .center1{
             text-align: center;
-        }
-        .footer1{
-            padding: 20px;
         }
         .head1{
             padding: 20px;
             background-color: rgba(50, 49, 49, 0.512);
             margin: 10px;
-        }
-        .button1{
-            border-color: transparent;
-            width: 133px;
-            margin-top: 20px;
-            height: 30px;
         }
         .box1{
             height: 1rem;
@@ -55,7 +34,9 @@
             border-radius: 50px;
             background-color: white;
             position: relative;
-            top: 9px;
+            top: 38px;
+            left: 20px;
+            
         }
         .box2{
             height: 1rem;
@@ -63,25 +44,37 @@
             border-radius: 50px;
             background-color: white;
             position: relative;
-            bottom: 7px;
+            top: 22px;
             float: inline-end;
+            right: 20px;
         }
-        .box3{
-            height: 1rem;
+        .p2img1{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 30px;
+            padding: 20px;
+            border-top: 2px solid white;
+        }
+        .p2img2{
+            width: 100%;
+            padding: 2px;
+        }
+        .round1{
             width: 1rem;
+            height: 1rem;
+            border-radius: 50px;
+            margin-right: 8px;
+        }
+        .round2{
+            width: 1rem;
+            height: 1rem;
             border-radius: 50px;
             background-color: white;
-            position: relative;
-            bottom: 9px;
+            margin-right: 8px;
         }
-        .box4{
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50px;
-            background-color: white;
-            position: relative;
-            float: inline-end;
-            bottom: 24px;
+        .rounded1{
+            display: flex;
+            justify-content: center;
         }
 
         @media only screen and (min-width: 768px){
@@ -89,15 +82,12 @@
             background-image: url("./img/tm-astro-bg.jpg");
             background-size: cover;
             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             }
             .box-styling{
                 border-bottom: 2px solid white;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-right: 30px;
-            }
-            .box-styling1{
-                border-bottom: 2px solid rgb(5, 244, 5);
                 padding-left: 20px;
                 padding-right: 20px;
                 margin-right: 30px;
@@ -113,6 +103,12 @@
                 margin-left: 45px;
                 margin-top: -5px;
             }
+            .box-styling1{
+                border-bottom: 2px solid rgb(5, 244, 5);
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-right: 30px;
+            }
             .dot-styling1{
                 width: 10px;
                 height: 10px;
@@ -124,29 +120,28 @@
             .padd2{
                 margin-bottom: 13px;
             }
-            .inter-box1{
-                display: grid;
-                grid-template-columns: 70% 30%;
+            .p2img1{
+                display: flex;
             }
-            .img1{
-             display: flex;
-             flex-direction: column;
-             justify-content: space-around;
-            } 
-            .article1{
-                width: 64%;
-                margin-left: 10rem;
-                padding: 2rem;
-            }
-            .img12{
-                height: 50%;
-                width: 100%;
-                margin-top: 1rem;
-            }
+
             .footer1{
                 display: flex;
                 padding: 10px;
                 justify-content: space-between;
+            }
+            .p2centered{
+                display: flex;
+                flex-direction: column;
+            }
+            .box2{
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50px;
+            background-color: white;
+            position: relative;
+            top: 22px;
+            float: inline-end;
+            right: 39px;
             }
         }
 
@@ -157,7 +152,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-transparent" id="nav1">
                 <div class="container-fluid pad1">
-                  <a class="navbar-brand" href="" id="color-white">Astro Motion</a>
+                  <a class="navbar-brand" href="#" id="color-white">Astro Motion</a>
                   <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -165,18 +160,18 @@
                     <div class="navbar-nav ms-auto">
                      
                       <div>
-                        <div class="box-styling1">
-                            <a class="nav-link padd2"href="" id="color-green">Home</a>
+                        <div class="box-styling">
+                            <a class="nav-link padd2"href="./index.html" id="color-white">Home</a>
                         </div>
-                        <div class="dot-styling1">
+                        <div class="dot-styling">
                         </div>
                       </div>
                       
                       <div>
-                        <div class="box-styling">
-                            <a class="nav-link padd2"href="./second.html" id="color-white">Gallery</a>
+                        <div class="box-styling1">
+                            <a class="nav-link padd2"href="#" id="color-green">Gallery</a>
                         </div>
-                        <div class="dot-styling">
+                        <div class="dot-styling1">
                         </div>
                       </div>
 
@@ -206,34 +201,43 @@
         </header>
 
         <article>
-            <div class="article1">
-                <div class="box1"></div>
-                <div class="box2"></div>
+            <div class="box1">
 
-                <div class="inter-box1">
-                    <div class="head1">
-                        <h3 id="color-white">Welcome To Astro Motion</h3>
-                        <p id="color-white">
-                            This HTML template has a motion video background loop which is provided by <span style="color: rgb(5, 244, 5)">Get Free Pictures</span>
-                            . This is One page responsive layout for your websites. Feel free to use this for a commercial purpose.
-                        </p>
-                        <p id="color-white"> 
-                            You are not permitted to redistribute this template to your Free CSS collection websites. Please 
-                            <span style="color: rgb(5, 244, 5)">contact us</span> for more information.
-                        </p>
+            </div>
+            <div class="box2">
+            </div>
+
+            <div class="p2centered">
+                <div class="p2img1">
+                
+                    <div>
+                        <img src="./img/gallery-img-01.jpg" alt="" class="p2img2">
                     </div>
-                    <div class="img1">
-                        <img src="./img/home-img-1.jpg" alt="" class="img12">
-                        <img src="./img/home-img-2.jpg" alt="" class="img12">
+                    <div>
+                        <img src="./img/gallery-img-02.jpg" alt="" class="p2img2">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-img-03.jpg" alt="" class="p2img2">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-img-04.jpg" alt="" class="p2img2">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-img-05.jpg" alt="" class="p2img2">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-img-06.jpg" alt="" class="p2img2">
                     </div>
                 </div>
-                
-                <div class="box3"></div>
-                <div class="box4"></div>
-
-
-                <div class="center1">
-                    <a href="./second.html"><button class="button1">View Gallery</button></a>
+    
+                <div class="rounded1">
+                    <div class="round1 bg-primary">
+                    </div>
+                    <div class="round2">
+                    </div>
+                    <div class="round2">
+                    </div>
+    
                 </div>
             </div>
         </article>
@@ -245,7 +249,6 @@
                 <p>Designed by Thunderu</p>
             </div>
         </footer>
-
     </div> 
     
 

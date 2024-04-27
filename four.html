@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+         .container1{
+                background-image: url("./img/tm-astro-bg.jpg");
+                background-size: cover;
+            }
+            #color-white{
+                color: white;
+            }
+            .center1{
+                text-align: center;
+            }
+            #color-green{
+                color: rgb(5, 244, 5);
+            }
+            .name1{
+                width: 20rem;
+                background-color: transparent;
+                border-color: transparent;
+                border-bottom: 1px solid white;
+            }
+            .name2{
+                height: 80px;
+            }
+            .button1{
+                background-color: white;
+                height: 30px;
+                margin-top: 20px;
+                width: 100px;
+                border-color: transparent;
+                float: inline-end;
+            }
+            .p4art1{
+                display: flex;
+                justify-content: center;
+            }
+            .p4art123{
+                margin-bottom: 0px;
+            }
+            .p4art2{
+                margin: 20px;
+                /* text-align: justify; */
+                padding: 20px;
+                /* background-color: rgba(50, 49, 49, 0.512); */
+            }
+            .ifr1{
+                width: 20rem;
+                margin: 20px;
+            }
+            .ifr2{
+                display: flex;
+                margin-top: 0px;
+                justify-content: center;
+            }
+            @media only screen and (min-width:768px){
+                .container1{
+                background-image: url("./img/tm-astro-bg.jpg");
+                background-size: cover;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                }
+                .pad1{
+                    padding: 30px;
+                }
+                .box-styling1{
+                    border-bottom: 2px solid rgb(5, 244, 5);
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-right: 30px;
+                }
+                .dot-styling1{
+                    width: 10px;
+                    height: 10px;
+                    background-color:  rgb(5, 244, 5);
+                    border-radius: 50px;
+                    margin-left: 45px;
+                    margin-top: -5px;
+                }
+                .padd2{
+                    margin-bottom: 13px;
+                }
+                .box-styling{
+                    border-bottom: 2px solid white;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-right: 30px;
+                }
+                .p4art1{
+                    margin-top: 50px;
+                }
+                .p4art2{
+                    margin-bottom: 0px;
+                }
+                article{
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    width: 70%;
+                }
+                .dot-styling{
+                    width: 10px;
+                    height: 10px;
+                    background-color: white;
+                    border-radius: 50px;
+                    margin-left: 45px;
+                    margin-top: -5px;
+                }
+                .footer1{
+                    display: flex;
+                    padding: 10px;
+                    justify-content: space-between;
+                }
+                .ifr1{
+                    width: 100%;
+                    margin-top: 0px;
+                }
+                .ifr2{
+                    padding: 20px;
+                }
+                .p4art123{
+                    margin-top: 0px;
+                }
+
+            } 
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid pad1">
+                  <a class="navbar-brand" href="#" id="color-white">Astro Motion</a>
+                  <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                     
+                      <div>
+                        <div class="box-styling">
+                            <a class="nav-link padd2"href="./index.html" id="color-white">Home</a>
+                        </div>
+                        <div class="dot-styling">
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <div class="box-styling">
+                            <a class="nav-link padd2"href="./second.html" id="color-white">Gallery</a>
+                        </div>
+                        <div class="dot-styling">
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="box-styling">
+                            <a class="nav-link padd2"href="./third.html" id="color-white">About</a>
+                        </div>
+                        <div class="dot-styling">
+                        </div>
+                      </div>
+
+
+                      <div>
+                        <div class="box-styling1">
+                            <a class="nav-link padd2"href="#" id="color-green">Contact</a>
+                        </div>
+                        <div class="dot-styling1">
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            
+        </header>
+
+
+
+
+
+        <article>
+            <div class="p4art1">
+                    <form action="">
+                        <label for="name" id="color-white">Name</label> <br>
+                        <input type="text" id="name" class="name1"> <br> <br>
+                        <label for="email" id="color-white">Email</label> <br>
+                        <input type="email" id="email" class="name1"> <br> <br>
+                        <label for="message" id="color-white">Message</label> <br>
+                        <textarea id="message" cols="10" rows="10" class="name1 name2"></textarea> <br>
+                        <input type="button" value="Send" class="button1">
+                    </form>
+             </div>
+    
+    
+            <div class="p4art123">
+                    <div class="p4art2">
+                        <h1 id="color-white">Contact Us</h1>
+                        <p id="color-white">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, 
+                            ducimus non. Dignissimos aliquid reprehenderit voluptatum? Ullam, 
+                            nesciunt et numquam voluptas.
+                        </p>
+                        <p id="color-white">Email:info@company.com</p>
+                        <p id="color-white">Tel: 01234-56789</p>
+                    </div>
+        
+                    <div class="ifr2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3019098188506!2d78.39954787498776!3d17.493095683412253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1714235310712!5m2!1sen!2sin" class="ifr1" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+        </article>
+
+
+
+
+         <footer>
+            <div class="center1 footer1" id="color-white">
+                <p>Copyright 2021 Astro Motion Company Limited. All rights reserved.</p>
+                <p>Designed by Thunderu</p>
+            </div>
+        </footer> 
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
